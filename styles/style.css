@@ -1,0 +1,174 @@
+@media screen { /* Стиль для отображения в браузере */
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+
+  .context-menu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+  }
+   
+  .context-menu--active {
+    display: block;
+  }
+
+
+  tbody tr th{
+    position: sticky;
+    top: 63px;
+    color: white;
+    background-color: #660f92;
+  }
+
+.tabcontent table thead tr th{
+  vertical-align:middle;
+}
+
+.tabcontent {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align:center;
+    font-size: 14px;
+  }
+
+  .tabcontent_second {
+    margin-top: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align:center;
+    font-size: 14px;
+  }
+  
+h5 ul li{
+    display: inline;
+    margin-right: 40px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid rgb(199, 194, 194);
+    padding: 10px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.grey{
+    background-color: #d6d6d6;
+  }
+
+thead{
+    background: #660f92;
+    text-align: center;
+    color: white;
+  }
+
+.buttonHide {
+  display: none;
+  height: 15px;
+  }
+
+table tbody tr:hover td .buttonHide {
+  display: block;
+  height: 15px;
+  }
+
+table thead tr th{
+  vertical-align:middle !important;
+  }
+
+tr {height: 40px;
+  }
+
+/* стиль строк в модальном окне добавления точек*/
+.ycolor{
+  background-color: rgb(160, 152, 152);
+  }
+
+.modal_button button{
+  margin-left: 5px;
+  }
+}
+
+@media print { /* Стиль для отображения в браузере */
+  .tabcontent {
+    border: 1px solid #ccc;
+    text-align:center;
+    font-size: 14px;
+  }
+
+body{
+  zoom: 60%;
+}
+
+.form-control{
+  zoom: 30%;
+}
+
+@page { 
+    size: landscape;
+}
+  table thead tr th{
+    vertical-align:middle !important;
+  }
+
+  tr {height: 40px;
+  }
+
+  .noprint{
+    display: none;
+  }
+}
+
+
+
+
+
+
+.context-menu {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  padding: 12px 0;
+  width: 240px;
+  background-color: #fff;
+  border: solid 1px #dfdfdf;
+  box-shadow: 1px 1px 2px #cfcfcf;
+}
+
+.context-menu--active {
+  display: block;
+}
+
+.context-menu__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.context-menu__item {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.context-menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.context-menu__link {
+  display: block;
+  padding: 4px 12px;
+  color: #0066aa;
+  text-decoration: none;
+}
+
+.context-menu__link:hover {
+  color: #fff;
+  background-color: #0066aa;
+}
